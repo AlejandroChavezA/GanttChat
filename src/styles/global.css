@@ -6,8 +6,9 @@
   .test {
     @apply relative;
   }
-
+  
   .test::after {
-    @apply content-[""] absolute right-0 top-0 bg-indigo-500 bg-opacity-25;
+    @apply content-[""] absolute top-0 left-0 w-full h-full z-10 bg-indigo-500 bg-opacity-25 border-4 border-indigo-500 border-dashed rounded-lg
   }
+  
 }
