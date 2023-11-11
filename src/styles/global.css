@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .test {
+    @apply relative;
+  }
+
+  .test::after {
+    @apply content-[""] absolute right-0 top-0 bg-indigo-500 bg-opacity-25;
+  }
+}
