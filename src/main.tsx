@@ -1,10 +1,21 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./styles/global.css";
+import MainLayout from "./Layouts/mainLayout";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+document.title = "GanttChat";
+
+const BrowserRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <MainLayout />,
+    children: [],
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <RouterProvider router={BrowserRouter} />
+  </React.StrictMode>
+);
