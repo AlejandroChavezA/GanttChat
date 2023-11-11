@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .test {
+    @apply relative;
+  }
+  
+  .test::after {
+    @apply content-[""] absolute top-0 left-0 w-full h-full z-10 bg-indigo-500 bg-opacity-25 border-4 border-indigo-500 border-dashed rounded-lg
+  }
+}

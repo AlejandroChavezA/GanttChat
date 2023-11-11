@@ -1,10 +1,12 @@
 import type { Config } from "tailwindcss";
+import { nextui } from "@nextui-org/react";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -27,20 +29,21 @@ const config: Config = {
           default: "#1D9A6C",
         },
         secondary: {
-          100: "#d4d8de",
-          200: "#bcc8d9",
-          300: "#99a0c10",
-          400: "#607c9f",
-          500: "#3b4f72",
-          600: "#254dd1",
-          700: "#1e3751",
-          800: "#1e403c",
-          900: "#1e3a2a",
-          default: "#3b4f72",
+          100: "#141117",
+          200: "#17151D",
+          300: "#191923",
+          400: "#1E2028",
+          500: "#22272e",
+          600: "#3F464A",
+          700: "#5D6466",
+          800: "#7A8282",
+          900: "#989E9D",
+          default: "#22272e",
         },
       },
     },
   },
-  plugins: [],
+  darkMode: "media",
+  plugins: [nextui()],
 };
 export default config;
