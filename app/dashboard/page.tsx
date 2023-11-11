@@ -1,3 +1,17 @@
-export default function Page() {
-  return <main className="h-full"></main>;
+import { Dancing_Script } from "next/font/google"
+
+
+
+const Dashboard: React.FC = () =>{
+
+  return(
+    <div className ="
+      
+    
+    ">
+
+    </div>
+  )
 }
+
+export default Dashboard
