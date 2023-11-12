@@ -5,7 +5,9 @@ const ChatPage = () => {
   return (
     <div className="w-full h-full flex flex-col gap-4">
       <div className="grow bg-secondary-400 rounded-lg">
-        <GanttChart />
+        <div className="w-full h-full">
+          <GanttChart />
+        </div>
       </div>
       <Input
         radius="lg"
