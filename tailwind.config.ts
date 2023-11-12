@@ -26,7 +26,7 @@ const config: Config = {
           700: "#137177",
           800: "#0E4D64",
           900: "#0A2F51",
-          default: "#1D9A6C",
+          DEFAULT: "#1D9A6C",
         },
         secondary: {
           100: "#141117",
@@ -38,7 +38,7 @@ const config: Config = {
           700: "#5D6466",
           800: "#7A8282",
           900: "#989E9D",
-          default: "#22272e",
+          DEFAULT: "#22272e",
         },
       },
     },
